@@ -1,0 +1,60 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp">
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorAccent"
+            android:text="Event Name"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/eventStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:layout_below="@id/eventName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+        android:id="@+id/eventEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:gravity="center_vertical"
+        android:textSize="12dp"
+        android:layout_below="@id/eventStartDate"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+
+        <TextView
+        android:id="@+id/eventmymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:gravity="center_vertical"
+        android:textSize="12dp"
+        android:layout_below="@id/eventEndDate"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
